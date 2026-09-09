@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="script.js" defer></script>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>luiz | Dev_Full_Stack</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="header-nav">
+            <p class="nav-logo">DevPortfolio</p>
+
+            <div class="nav-links">
+                <a href="#about">Sobre mim</a>
+                <a href="#projects">Projetos</a>
+                <a href="#tech">Tecnologias</a>
+                <a href="#education">Formação</a>
+                <a href="#contact" class="btn-gradient">Contato</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="container-hero">
+
+            <section class="hero">
+
+                <div class="hero-content">
+
+                    <div class="hero-hello" id="about">
+
+                        <h1 class="hero-hello-title">Olá, Eu sou <strong>Luiz Carlos</strong> </h1>
+                        <img class="hero-pixel-boy" src="./assets/LC IB.gif" alt="boneco-pixel">
+
+                    </div>
+
+                    <div class="hero-description">
+                        <h2 class="hero-description-title">Desenvolvedor <strong>Full Stack</strong></h2>
+                        <p class="hero-description-text">
+                            Construo Soluções digitais que combinam tecnologias modernas e design.
+                            Eu transformo suas ideias em tecnologia.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="hero-cv">
+
+                    <span class="my-cv">Meu Curriculo →</span>
+
+                    <a href="" class="download-cv" download>
+                        <i data-lucide="download"></i>
+                        Download CV
+                    </a>
+
+                </div>
+
+
+
+            </section>
+
+
+            <section class="photo">
+
+                <img class="my-photo" src="./assets/luiz.png" alt="Minha foto">
+
+            </section>
+
+        </div>
+
+
+        <section id="tech" class="tech">
+            <h2 class="tech-title">Tecnologias</h2>
+
+            <section class="tech-category frontend">
+
+                <h3 class="tech-subtitle"><i data-lucide="monitor"></i> FrontEnd</h3>
+
+                <ul class="tech-ul">
+
+                    <li class="tech-li tag-front">
+                        <i class="devicon-html5-plain colored"></i>
+                        <span>HTML5</span>
+                    </li>
+
+                    <li class="tech-li tag-front">
+                        <i class="devicon-css3-plain colored"></i>
+                        <span>CSS3</span>
+                    </li>
+
+                    <li class="tech-li tag-front">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <span>Javascript</span>
+                    </li>
+
+                    <li class="tech-li tag-front">
+                        <i class="devicon-react-plain colored"></i>
+                        <span>React</span>
+                    </li>
+
+                    <li class="tech-li tag-front">
+                        <img class="ejs" src="/assets/ejs-dark.svg" alt="">
+                        <span>EJS</span>
+                    </li>
+
+                </ul>
+            </section>
+
+            <section class="tech-category backend">
+
+                <h3 class="tech-subtitle"><i data-lucide="server"></i> BackEnd</h3>
+
+                <ul class="tech-ul">
+
+                    <li class="tech-li tag-back">
+                        <i class="devicon-nodejs-plain colored"></i>
+                        <span>NodeJs</span>
+                    </li>
+
+                    <li class="tech-li tag-back">
+                        <i class="devicon-express-original"></i>
+                        <span>Express</span>
+                    </li>
+
+                    <li class="tech-li tag-back">
+                        <i class="devicon-typescript-plain colored"></i>
+                        <span>Typescript</span>
+                    </li>
+
+                </ul>
+            </section>
+
+            <section class="tech-category database">
+
+                <h3 class="tech-subtitle"><i data-lucide="database"></i> Database</h3>
+
+                <ul class="tech-ul">
+
+                    <li class="tech-li tag-database">
+                        <i class="devicon-postgresql-plain colored"></i>
+                        <span>PostgreSQL</span>
+                    </li>
+
+                    <li class="tech-li tag-database">
+                        <i class="devicon-prisma-original"></i>
+                        <span>Prisma</span>
+                    </li>
+
+                </ul>
+            </section>
+
+            <section class="tech-category tools">
+
+                <h3 class="tech-subtitle"><i data-lucide="wrench"></i> Tools</h3>
+
+                <ul class="tech-ul">
+
+                    <li class="tech-li tag-tool">
+                        <i class="devicon-github-plain"></i>
+                        <span>Github</span>
+                    </li>
+
+                    <li class="tech-li tag-tool">
+                        <i class="devicon-git-plain colored"></i>
+                        <span>Git</span>
+                    </li>
+
+                    <li class="tech-li tag-tool">
+                        <i class="devicon-vite-plain colored"></i>
+                        <span>Vite</span>
+                    </li>
+
+                </ul>
+            </section>
+        </section>
+
+        <section id="projects" class="projects">
+
+            <h2 class="projects-title">
+                Projetos
+            </h2>
+
+            <ul class="projects-ul">
+
+                <li class="project-li">
+                    <article class="project-card">
+                        <img class="construction" src="./assets/psycare.jpg" alt="">
+                        <h3>PsyCare</h3>
+                        <p>Sistema sendo desenvolvido para um psicólogo gerenciar pacientes e consultar métricas. Esse
+                            sistema
+                            tem a via do cliente e a via do psicólogo. Clientes podem se consultar e o psicólogo
+                            gerencia.</p>
+
+                        <div class="project-used-techs">
+                            <span>Typescript</span>
+                            <span>React</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>NodeJs</span>
+                            <span>Express</span>
+                            <span>Prisma</span>
+                        </div>
+
+                        <div class="project-links-content">
+                            <a href="https://github.com/LuizKap/Psycare" class="project-links"
+                                target="_blank">Github</a>
+                            <a href="" class="project-links" target="_blank">Live Demo</a>
+                        </div>
+                    </article>
+                </li>
+
+                <li class="project-li">
+                    <article class="project-card">
+
+                        <img src="./assets/studio.png" alt="">
+                        <h3>StudioSync</h3>
+                        <p>Sistema de reservas de estúdios musicais, integrado à gateway stripe para testes de
+                            pagamentos</p>
+
+                        <div class="project-used-techs">
+                            <span>Javascript</span>
+                            <span>HTML</span>
+                            <span>Css</span>
+                            <span>Arquitetura MVC</span>
+                            <span>Express</span>
+                            <span>EJS</span>
+                        </div>
+
+                        <div class="project-links-content">
+                            <a href="https://github.com/LuizKap/StudioSync" class="project-links"
+                                target="_blank">Github</a>
+                            <a href="https://studiosync-1q2q.onrender.com" class="project-links" target="_blank">Live
+                                Demo</a>
+                        </div>
+                    </article>
+                </li>
+
+                <li class="project-li">
+                    <article class="project-card">
+
+                        <img src="./assets/infinite.png" alt="">
+                        <h3>Infinite&Beyond</h3>
+                        <p>Um site de jogos, meu primeiro projeto apenas de FrontEnd,<br> consumindo uma API em
+                            Typescript,
+                            Css e Html. </p>
+
+                        <div class="project-used-techs">
+                            <span>Javascript</span>
+                            <span>HTML</span>
+                            <span>Css</span>
+                            <span>Typescript</span>
+                            <span>Api Rawg</span>
+                        </div>
+
+                        <div class="project-links-content">
+                            <a href="https://github.com/LuizKap/Infinite-Beyond" class="project-links"
+                                target="_blank">Github</a>
+                            <a href="https://infinite-beyond.vercel.app/" class="project-links" target="_blank">Live
+                                Demo</a>
+                        </div>
+                    </article>
+                </li>
+
+            </ul>
+
+        </section>
+
+        <section id="education" class="education">
+
+            <h2 class="education-title"> Formação </h2>
+            <span class="education-sub"> Minha Jornada acadêmica</span>
+
+            <ul class="education-ul">
+
+                <li>
+                    <article class="education-card">
+                        <i data-lucide="graduation-cap"></i>
+                        <h3>Superior - Análise e Desenvolvimento de Sistemas</h3>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="education-card">
+                        <i data-lucide="graduation-cap"></i>
+                        <h3>OneBitcode - Aperfeiçoamento em Javascript</h3>
+                    </article>
+                </li>
+
+            </ul>
+
+        </section>
+
+        <section id="contact">
+
+            <h2 class="contact-title">Entre em Contato</h2>
+            <p class="contact-sub">
+                Vamos conversar? Me encontre através das minhas redes.
+            </p>
+
+            <div class="contact-content">
+
+                <a href="https://github.com/LuizKap" class="contact-card" target="_blank">
+                    <i class="devicon-github-original"></i>
+
+                    <div>
+                        <h3>GitHub</h3>
+                        <span>Meus projetos</span>
+                    </div>
+                </a>
+
+                <a href="mailto:luizdetobias@gmail.com" class="contact-card">
+                    <i data-lucide="mail"></i>
+
+                    <div>
+                        <h3>Gmail</h3>
+                        <span>Entre em contato comigo</span>
+                    </div>
+                </a>
+
+                <a href="https://instagram.com/luiz.Kap" class="contact-card" target="_blank">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor"
+                            d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5Zm5-3a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z" />
+                    </svg>
+                    <div>
+
+                        <h3>Instagram</h3>
+                        <span>Me acompanhe</span>
+                    </div>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
