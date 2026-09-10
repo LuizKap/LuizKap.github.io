@@ -6,6 +6,13 @@ html {
     scroll-behavior: smooth;
 }
 
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +36,6 @@ html {
 }
 
 body {
-    min-height: 100vh;
 
     background: linear-gradient(100deg,
             #160b0bfa 5%,
@@ -42,6 +48,10 @@ body {
 }
 
 /* ================= HEADER ================ */
+
+.menu-toggle {
+    display: none;
+}
 
 .nav-logo {
     background: var(--gradient-text-orange);
@@ -105,7 +115,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    gap: 12rem;
+    row-gap: 12rem;
     margin: 2.5rem;
 }
 
@@ -131,7 +141,6 @@ main {
 .hero-hello {
     display: flex;
     align-items: center;
-
 }
 
 .hero-description {
@@ -316,7 +325,7 @@ strong {
 
 .tech-ul {
     display: grid;
-    grid-template-columns: repeat(3, minmax(250px, auto));
+    grid-template-columns: repeat(3, minmax(250px, 600px));
     grid-auto-rows: minmax(200px, auto);
     gap: 5rem;
 }
@@ -388,11 +397,11 @@ strong {
     right: -70px;
 }
 
-.frontend .tech-li:nth-child(5) {
+.tag-front:nth-child(5) {
     grid-column: 3;
 }
 
-.database .tech-li:nth-child(2) {
+.tag-database:nth-child(2) {
     grid-column: 3;
 }
 
@@ -473,6 +482,7 @@ strong {
     align-items: center;
     gap: 2rem;
     padding: 15px;
+    min-height: 100%;
 }
 
 .project-card:hover {
@@ -498,8 +508,6 @@ strong {
     background-color: #18181834;
 }
 
-
-
 .project-card h3 {
     color: #f5f5f5;
     font-size: 1.5rem;
@@ -508,6 +516,13 @@ strong {
 .project-card p {
     color: #f5f5f5c4;
     text-align: center;
+}
+
+.project-used-techs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
 }
 
 .project-used-techs span {
@@ -782,4 +797,141 @@ strong {
     color: #f5f5f5a8;
     font-family: 'Oxanium', sans-serif;
     font-size: 0.9rem;
+}
+
+@media (max-width: 1000px) {
+
+    .projects-ul {
+        grid-template-columns: repeat(1, minmax(auto, 1fr));
+    }
+
+    .project-li:nth-child(1) {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 1120px) {
+
+    /*----- HERO ---- */
+    .hero-hello-title strong {
+        white-space: nowrap;
+        display: block;
+    }
+
+    /*----- TECH --- */
+    .tech-ul {
+        grid-template-columns: repeat(2, minmax(200px, auto));
+
+    }
+
+    .tag-front:nth-child(5),
+    .tag-database:nth-child(2) {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 870px) {
+
+    .header-nav {
+        position: relative;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--orange-light);
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 15px;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+
+        width: auto;
+        padding: 20px;
+
+        background: var(--bg-secondary);
+        border: 1px solid #ffffff14;
+        border-radius: 15px;
+
+        box-shadow: 0 10px 30px #00000066;
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* HERO */
+
+    .container-hero {
+        flex-direction: column;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .hero-description {
+        width: 100%;
+    }
+
+    .photo {
+        width: 100%;
+    }
+
+    /*--  Contact --- */
+
+    .contact-content{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 590px) {
+
+    .tech-ul {
+        grid-template-columns: repeat(1, minmax(200px, auto));
+
+    }
+
+    .education-card{
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 450px){
+    .hero-hello{
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+
+    .contact-title, .contact-sub{
+        text-align: center;
+    }
+}
+
+@media (max-width: 350px){
+    .my-cv{
+        font-weight: 100;
+    }
+
+    .download-cv{
+        flex-direction: column;
+    }
+
+    .education-card h3{
+        font-size: 1rem;
+    }
 }
